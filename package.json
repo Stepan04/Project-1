@@ -34,5 +34,9 @@
     "webp-converter": "^2.2.3",
     "webpack": "^5.74.0",
     "webpack-stream": "^7.0.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.2",
+    "chart.js": "^4.0.1"
   }
 }
