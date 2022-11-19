@@ -1,0 +1,248 @@
+.con1{
+  padding: 15px 0px;
+  margin-left:10px;
+}
+.con2{
+  padding: 15px 0;
+  margin-left: 10px;
+}
+.con3{
+  padding: 15px 0;
+  margin-left: 10px;
+}
+.con4{
+  padding: 15px 0;
+  margin-left: 10px;
+}
+.con5{
+  padding: 15px 0;
+  
+}
+.footer{
+  padding-top: 85px;
+}
+.text1{
+  margin-left: 20px;
+  margin-top: -55px;
+  font-weight:bold;
+  font-size:larger;
+}
+.text1_1{
+  margin-left: 45px;
+  margin-top: -55px;
+  font-weight:bold;
+  font-size:larger;
+}
+.text2{
+  margin-left: 54px;
+  font-size:85%;
+}
+.i_img{
+ display: block;
+  margin-left: -250px;
+  margin-top: 10px;
+}
+.i_text{
+  text-align: start;
+  margin-top: -20px;
+  margin-left: 100px;
+}
+.badge{
+  background-color:rgb(213, 126, 21); 
+  
+}
+.DB{
+ font-family: 'Helvetica Neue Arabic';
+ font-weight: 700;
+ font-size: 26px;
+}
+.i_search{
+  margin-left: 260px;
+}
+.btn-bd-primary {
+  --bs-btn-font-weight: ;
+  --bs-btn-color: var(--bs-black);
+  --bs-btn-bg: var(--bd-black);
+  --bs-btn-border-color: var(--bd-black);
+  --bs-btn-border-radius: .5rem;
+  --bs-btn-hover-color: var(--bs-black);
+  --bs-btn-hover-bg: #d7d2e2;
+  --bs-btn-hover-border-color: #d7d2e2;
+  --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+  --bs-btn-active-color: var(--bs-btn-hover-color);
+  --bs-btn-active-bg: #d7d2e2;
+  --bs-btn-active-border-color: #d7d2e2;
+  background-color:white;
+  width: 220px;
+  height: 100px;
+}
+a{
+  text-decoration: none;
+}
+.look-calendar {
+  width:auto;
+  height: auto;
+  border:1px solid none;
+  border-radius: 3%;
+  padding:6px;
+  margin: 0 auto;   
+  background: white; 
+}
+#calendar {
+  width: 100%;
+  line-height: 1.2em;
+  font-size: 18px;
+  text-align: center;
+  border-spacing:0px;
+}
+#calendar tr.dn td {
+  font-size: 18px;
+}
+#calendar thead tr:last-child {
+  font-size: small;
+  color: #7c95be;
+}
+#calendar thead tr:nth-child(1) td:nth-child(2) {
+  color: #7c95be;
+}
+#calendar thead tr:nth-child(1) td:nth-child(1):hover,
+#calendar thead tr:nth-child(1) td:nth-child(3):hover {
+  cursor: pointer;
+}
+#calendar tbody td {
+  color: #7c95be;
+}
+#calendar tbody td:nth-child(n+6),
+#calendar .holiday {
+  color: #7c95be;
+}
+#calendar tbody td.today {
+  background: none;
+  color: rgb(5, 5, 5);
+}
+.h{
+  background: none;
+  color:  #7c95be;
+}
+.list-group-item{
+  background-color:#f6f6f6;
+  border-bottom:#f6f6f6 ;
+  border-color: none;
+  border-radius: 3%;
+}
+.stext{
+  font-size:xx-small;
+  margin-bottom: 10px;
+  margin-top: 8px;
+  font-family: 'Helvetica Neue Arabic';
+font-size: 12px;
+line-height: 1.2;
+font-weight: 400;
+color: #bdb9b9;
+}
+.site_text{
+  font-family: 'Helvetica Neue Arabic';
+font-size: 19px;
+line-height: 1.2;
+font-weight: 400;
+color: #a2a0a0;
+}
+.data_text{
+  font-family: 'Helvetica Neue Arabic';
+  margin-top: 10px;
+  margin-left: 10px;
+font-size: 18px;
+line-height: 1.2;
+font-weight: 400;
+color: #a5a2a2;
+}
+.iit{
+  font-family: 'Helvetica Neue Arabic';
+color: #ffffff;
+}
+.itt{
+  font-family: 'Helvetica Neue Arabic';
+color: #ffffff;
+}
+
+
+*{
+  margin: 0;
+  padding: 0 ;
+  box-sizing: border-box;
+}
+body{
+  min-height: 100vh;
+  background-size:cover ;
+  background-position: center;
+}
+.side-bar{
+  background: #232730;
+  backdrop-filter: bler(15px);
+  width: 380px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  overflow-y: auto;
+  transition: 0.6s ease;
+  transition-property: left;
+}
+.side-bar.active{
+  left: 0;
+}
+.side-bar .menu{
+width: 100%;
+margin-top: 60px;
+}
+.side-bar .menu .item{
+position: relative;
+cursor: pointer;
+
+}
+.side-bar .menu .item a{
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  display: block;
+  padding: 5px 30px;
+  line-height: 40px;
+}
+.side-bar .menu .item a:hover{
+  background: #8621F8;
+  transition: 0.3s ease;
+}
+.side-bar .menu .item i{
+  margin-right: 15px;
+}
+.side-bar .menu .item a .dropdown{
+  position: absolute;
+  right: 30px;
+  margin: 15px;
+  transition: 0.3s ease;
+}
+.side-bar .menu .item .sub-menu{
+  background: rgba(255,255,255,0.1);
+  display: none;
+}
+.side-bar .menu .item .sub-menu a{
+  padding-left: 80px;
+
+}
+.rotate{
+  transform: rotate(90deg);
+}
+.close-btn{
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  right: 10px;
+  margin: 25px;
+cursor: pointer;
+}
+.menu-btn{
+  position: absolute;
+  color: black;
+  font-size: 20px;
+  margin: 25px;
+  cursor: pointer;
+}
