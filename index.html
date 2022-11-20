@@ -663,31 +663,54 @@ color: #7f7777;">Total earned</p></div>
 
 
 <script>
+  //Ajax Block
+  const xmlhttp = new XMLHttpRequest();
+  const url = 'http://127.0.0.1:5501/data.json';
+// asycn
+  xmlhttp.open('GET', url, true);
+  xmlhttp.send();
 
-  let ctx1= document.querySelector('#firstChart').getContext('2d');
-  
-  let firstChart= new Chart(ctx1,{
+  xmlhttp.onreadystatechange = function(){
+    if(this.readyState == 4 && this.status == 200){
+    const datapoints = JSON.parse(this.responseText);
+    const labelsmonth = datapoints.datagraf.map(
+      function(index){
+        return index.month;
+      });
+
+      const money = datapoints.datagraf.map(
+      function(index){
+        return index.money;
+      });
+      const line = datapoints.datagraf.map(
+      function(index){
+        return index.line;
+      });
+      const lin = datapoints.datagraf.map(
+      function(index){
+        return index.lin;
+      });
     
+    let ctx1= document.querySelector('#firstChart').getContext('2d');
+  let firstChart= new Chart(ctx1,{
     type:'line',
     data:{
-        labels:["January",'', "February",'', "March",'', "April",'', "May",'', "June"],
+        labels: labelsmonth,
         datasets:[{
           label: '#Yearly Sales',
-            data:[0, 450, 200,100, 300,200, 150, 170,180,200,300 ],
+            data: money,
             backgroundColor:['#8cc152'
-          
             ],
             borderColor:[
                 'rgba(79,95,111,0.3)'
             ],
-            
             borderWidth:2,
             tension: 0.3,
             fill: true
-        },{
-            data:[0, 550, 49, 30, 300, 40,0,200,300,200,0 ],
+        },
+        {
+            data: line,
             backgroundColor:['#f7c055'
-          
             ],
             borderColor:[
                 'rgba(79,95,111,0.3)'
@@ -697,9 +720,8 @@ color: #7f7777;">Total earned</p></div>
             fill: true
         },
         {
-            data:[0, 250, 200, 550, 300, 200,220,205,0,0,0],
+            data: lin,
             backgroundColor:['#73cba7'
-          
             ],
             borderColor:[
                 'rgba(79,95,111,0.3)'
@@ -713,7 +735,6 @@ color: #7f7777;">Total earned</p></div>
     },
     options:{
         scales: {
-            
                     y: {
                         beginAtZero: true,
                         min: 0,
@@ -740,6 +761,12 @@ color: #7f7777;">Total earned</p></div>
                 }
     }
   })
+    }
+  }
+
+
+
+ 
 </script>
   
 

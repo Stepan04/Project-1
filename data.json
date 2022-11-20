@@ -1,0 +1,70 @@
+{
+    "datagraf":[
+        {
+            "month":"Jan",
+            "money": 0,
+            "line": 0,
+            "lin": 0
+        },
+        {
+            "month":"",
+            "money": 450,
+            "line": 550,
+            "lin": 250
+        },
+        {
+            "month":"Feb",
+            "money": 200,
+            "line": 49,
+            "lin": 200
+        },
+        {
+            "month":"",
+            "money": 100,
+            "line": 30,
+            "lin": 550
+        },
+        {
+            "month":"March",
+            "money": 300,
+            "line": 300,
+            "lin": 300
+        },
+        {
+            "month":"",
+            "money": 200,
+            "line": 40,
+            "lin": 200
+        },
+        {
+            "month":"April",
+            "money": 100,
+            "line": 0,
+            "lin": 220
+        },
+        {
+            "month":"",
+            "money": 170,
+            "line": 200,
+            "lin": 205
+        },
+        {
+            "month":"May",
+            "money": 140,
+            "line": 300,
+            "lin": 0
+        },
+        {
+            "month":"",
+            "money": 190,
+            "line": 200,
+            "lin": 0
+        },
+        {
+            "month":"Jun",
+            "money": 300,
+            "line": 0,
+            "lin": 0
+        }
+     ]
+} 
